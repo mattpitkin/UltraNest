@@ -38,7 +38,7 @@ def nested_integrator(sampler, terminationcriterion, check_every=10,
 	weights = [] #[-1e300, 1]]
 	
 	convergence_tests = []
-	widgets = [progressbar.Counter('%f'),
+	widgets = [progressbar.Counter('%d'),
 		progressbar.Bar(), progressbar.Percentage(), AdaptiveETA()]
 	pbar = progressbar.ProgressBar(widgets = widgets)
 	
